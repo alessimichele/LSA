@@ -71,3 +71,8 @@ The following pipeline is followed to perform the analysis:
 |8            |200                       |        52%    | 40%|
 
 
+## AGGIUNGERE
+
+METTERE GLI OUT.TXT
+METTERE CODICE SORGENTE PER LE PIPELINE
+METTERE QUALCOSA SUL SALVATAGGIO DEI MODELLI VOLENDO
