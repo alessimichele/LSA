@@ -114,19 +114,20 @@ The percentage % represent the percentage of queries within the .QRY file that h
 Many architecured were recently developed to learn a latent representation of a document. In this project, I used two simple architectures: the AutoEncoder and the VariationalAutoEncoder.
 
 ### AutoEncoder
-The idea behind the AutoEncoder is to learn a latent representation of the document, by encoding it into a lower dimensional space, and then decoding it back to the original space. 
-The encodind is done using two hidden linear layers, with reLU activation function. Note that the latent space is the output of the encoder.
+The idea behind the AutoEncoder is to learn a deterministic latent representation of the document, by encoding it into a lower dimensional space, and then decoding it back to the original space. 
+The encoding is done using two hidden linear layers, with reLU activation function. Note that the latent space is the output of the encoder.
 The decoding is done using one linear layer, then a Softmax layer: this is useful to obtain a probability distribution over the vocabulary space, based on the latent representation of the document.
 
 The training is done minimizing the loss function, which is the cross entropy between the original document and the decoded one, as depicted in the following figure.
 ![AutoEncoder](./images/AE.png)
 
 ### VariationalAutoEncoder
-The VariationalAutoEncoder is a more complex architecture, which also aims to learn a latent representation of the document by encoding it into a latent space, and then decoding it back to the original space. 
+The VariationalAutoEncoder is a more complex architecture. 
 In this context, we don't learn a deterministc latent space, but a probabilistic one. 
 During the training, we learn an inference model parametrized by the encoder neural network which outputs the parameters of the unknown probability distribution $p(z|q)$. Then, we sample from this distribution to obtain the latent representation of the document.
-The generative model (or decoder network) is then used to reconstruct the document from its latent representation.
 The prior distribution $p(z)$ is a standard Gaussian distribution, and the inference model is a Gaussian distribution with diagonal covariance matrix.
+
+The generative model (or decoder network) is then used to reconstruct the document from its latent representation.
 The training is done minimizing the loss function, which is the sum of the cross entropy between the original document and the decoded one, and the KL divergence between the inference model and the prior distribution, as depicted in the following figure.
 ![VariationalAutoEncoder](./images/VAE.png)
 
