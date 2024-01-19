@@ -2,15 +2,16 @@
 Repository for the project of Information Retrieval @ University of Trieste held by professor Laura Nenzi, DSSC Course, A.Y. 2023/2024.
 
 ## Outline of the project
-This project aims to implement different models for Latent Semantic Analysis (LSA) using deep neural networks and SVD technique, and compare their performances.
+This project aims to implement different models for Latent Semantic Analysis (LSA) using deep neural networks and SVD techniques, and compare their performances.
 The goal of the assessment is to evaluate the quality of the learnt latent space.
 The following papers were used as starting point to implement the code:
 - [Neural Variational Inference for Text Processing](https://arxiv.org/abs/1511.06038)
 - [Unsupervised Neural Generative Semantic Hashing](https://arxiv.org/abs/1906.00671)
 - [Semantic Hashing](https://www.sciencedirect.com/science/article/pii/S0888613X08001813)
 
-The datasets used can be distinguished in two different categories:
-- dataset inside [data](./data/) folder are small dataset, which comprises:
+## Dataset
+The datasets used can be distinguished into two different categories:
+- dataset inside [data](./data/) folder are small datasets, which comprises:
     - corpus of documents/articles (`.ALL` file)
     - a set of provided queries (`.QRY` file)
     - for each query, the corresponding relevance judgements (`.REL` file)
@@ -22,16 +23,22 @@ The datasets used can be distinguished in two different categories:
     - cran dataset (1398 documents, 225 queries)
     - med dataset (1033 documents, 29 queries)
 - [src](./src/) folder contains the source code:
-    - [autoencoder.py](./src/autoencoder.py) implementation from scratch of autoencoder architecture
-    - [variational_autoencoder.py](./src/variational_autoencoder.py) implementation from scratch of variational autoencoder architecture
-    - [IR class](./src/IR.py) implementation of a python class from scratch useful for the analysis
-    - [import_dataset.py](./src/import_dataset.py) code for read and import data stored inside [data](./data/) folder.
-    - [pipelines.py](./src/pipelines.py) implementation of two pipelines for the analysis of the two different categories of dataset.
-    - [utils.py](./src/utils.py) code for the implementation of some useful functions.
+    - [autoencoder.py*](./src/autoencoder.py) implementation from scratch of autoencoder architecture
+    - [variational_autoencoder.py*](./src/variational_autoencoder.py) implementation from scratch of variational autoencoder architecture
+    - [IR class*](./src/IR.py) implementation of a python class from scratch useful for the analysis
+    - [import_dataset.py*](./src/import_dataset.py) code for read and import data stored inside [data](./data/) folder.
+    - [pipelines.py*](./src/pipelines.py) implementation of two pipelines for the analysis of the two different categories of dataset.
+    - [utils.py*](./src/utils.py) code for the implementation of some useful functions.
+    - [_embeddings.py**](./src/_embeddings.py) code for the implementation from scratch of the inverted index, the tfidf and word-count matrices.
 
 - [out](./out/) folder contains `.txt` outputs from the analysis done on [data](./data/).
 - [data_analysis](./data_analysis.ipynb) notebook for the analysis of the [data](./data/)'s datasets.
 - [20news_analysis](./20news_analysis.ipynb) notebook for the analysis of the [20newsgroup](http://qwone.com/~jason/20Newsgroups/) dataset.
+
+
+`*`: for further details, see the specific documentation provided for each function.
+
+`**`: the code is working but not directly employed for efficiency reasons.
 
 ## Procedure for [data](./data/) analysis
 The following pipeline is followed to perform the analysis:
@@ -53,7 +60,7 @@ The following pipeline is followed to perform the analysis:
 
 ## Procedure for [20newsgroup](http://qwone.com/~jason/20Newsgroups/) analysis
 The following pipeline is followed to perform the analysis:
-1. import the data
+1. Import the data
 2. Use a CountVectorizer to build the bag of words matrix of the training data
 3. Build the trainlaoder using the embdedded training data
 4. Train a AutoEncoder model using the trainloader
@@ -73,7 +80,7 @@ In this section are reported the results obtained from the analysis of the diffe
 
 ### [20newsgroup](http://qwone.com/~jason/20Newsgroups/) dataset
 The following table reports the results obtained from the analysis of the [20newsgroup](http://qwone.com/~jason/20Newsgroups/) dataset. The model used is the AutoEncoder, trained on word-count embedding matrix of the training data.
-It was tested with an increasing number of classses, and with different latent dimensions (50 and 200). Then, cosine similarity and nearest neighbours were used to retrieve the documents, and compared following step 6-7 of the procedure for [20newsgroup](http://qwone.com/~jason/20Newsgroups/) analysis.
+It was tested with an increasing number of classes, and with different latent dimensions (50 and 200). Then, cosine similarity and nearest neighbours were used to retrieve the documents, and compared following step 6-7 of the procedure for [20newsgroup](http://qwone.com/~jason/20Newsgroups/) analysis.
 
 |# classess        |latent dimension         | Accuracy cosine similarity   | Accuracy nearest neighbours|
 |------------------|-------------------------|------------------------------|----------------------------|
@@ -102,3 +109,25 @@ The percentage % represent the percentage of queries within the .QRY file that h
 |MED - WC|93%, P: 50%, R: 35%|93%, P: 42%, R: 29%, $\ell$=0.42|17%, P: 1%, R: 1%, $\ell$=0.43|
 |MED - TFIDF|96%, P: 68%, R: 48%|96%, P: 42%, R: 30%, $\ell$=0.11|38%, P: 3%, R: 2%, $\ell$=0.12|
 
+
+## AutoEncoder and VariationalAutoEncoder latent space
+Many architecured were recently developed to learn a latent representation of a document. In this project, I used two simple architectures: the AutoEncoder and the VariationalAutoEncoder.
+
+### AutoEncoder
+The idea behind the AutoEncoder is to learn a latent representation of the document, by encoding it into a lower dimensional space, and then decoding it back to the original space. 
+The encodind is done using two hidden linear layers, with reLU activation function. Note that the latent space is the output of the encoder.
+The decoding is done using one linear layer, then a Softmax layer: this is useful to obtain a probability distribution over the vocabulary space, based on the latent representation of the document.
+
+The training is done minimizing the loss function, which is the cross entropy between the original document and the decoded one, as depicted in the following figure.
+![AutoEncoder](./images/AE.png)
+
+### VariationalAutoEncoder
+The VariationalAutoEncoder is a more complex architecture, which also aims to learn a latent representation of the document by encoding it into a latent space, and then decoding it back to the original space. 
+In this context, we don't learn a deterministc latent space, but a probabilistic one. 
+During the training, we learn an inference model parametrized by the encoder neural network which outputs the parameters of the unknown probability distribution $p(z|q)$. Then, we sample from this distribution to obtain the latent representation of the document.
+The generative model (or decoder network) is then used to reconstruct the document from its latent representation.
+The prior distribution $p(z)$ is a standard Gaussian distribution, and the inference model is a Gaussian distribution with diagonal covariance matrix.
+The training is done minimizing the loss function, which is the sum of the cross entropy between the original document and the decoded one, and the KL divergence between the inference model and the prior distribution, as depicted in the following figure.
+![VariationalAutoEncoder](./images/VAE.png)
+
+For further reading, see [this](https://arxiv.org/abs/1312.6114) paper.
