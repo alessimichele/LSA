@@ -1,0 +1,1318 @@
+Building tfidf matrix...
+
+/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/sklearn/feature_extraction/text.py:409: UserWarning: Your stop_words may be inconsistent with your preprocessing. Tokenizing the stop words generated tokens ['abov', 'acro', 'afterward', 'alon', 'alreadi', 'alway', 'anoth', 'anyon', 'anyth', 'anywher', 'becam', 'becaus', 'becom', 'befor', 'besid', 'betwen', 'botom', 'canot', 'describ', 'dure', 'els', 'elsewher', 'empti', 'everi', 'everyon', 'everyth', 'everywher', 'fiften', 'fifti', 'forti', 'henc', 'hereaft', 'herebi', 'howev', 'hundr', 'ind', 'later', 'mani', 'meanwhil', 'moreov', 'neverthel', 'nobodi', 'noth', 'nowher', 'onc', 'onli', 'otherwis', 'ourselv', 'perhap', 'pleas', 'sem', 'seme', 'sever', 'sinc', 'sincer', 'sixti', 'someon', 'someth', 'sometim', 'somewher', 'stil', 'themselv', 'thenc', 'thereaft', 'therebi', 'therefor', 'thre', 'togeth', 'twelv', 'twenti', 'veri', 'whatev', 'whenc', 'whenev', 'wherea', 'whereaft', 'wherebi', 'wherev', 'yourselv'] not in stop_words.
+  warnings.warn(
+Done.
+
+Tfidf matrix selected.
+
+SVD
+
+
+Building latent space using svd decomposition...
+
+Current matrix in use is: tfidf.
+
+Done.
+
+Computing query-corpus similarity using SVD latent space...
+Embedding type: tfidf
+Latent SVD dimension: 100
+
+Done.
+
+Query 0: P: 0.4666666666666667 R: 1.0
+
+Query 1: P: 0.13333333333333333 R: 1.0
+
+Query 2: P: 0.06666666666666667 R: 0.25
+
+Query 3: P: 0.06666666666666667 R: 0.2
+
+Query 5: P: 0.6 R: 1.0
+
+Query 7: P: 0.13333333333333333 R: 1.0
+
+Query 8: P: 0.4666666666666667 R: 0.875
+
+Query 9: P: 0.4 R: 1.0
+
+Query 10: P: 0.06666666666666667 R: 0.5
+
+Query 11: P: 0.4666666666666667 R: 1.0
+
+Query 12: P: 0.2 R: 1.0
+
+Query 14: P: 0.26666666666666666 R: 0.8
+
+Query 15: P: 0.2 R: 1.0
+
+Query 16: P: 0.13333333333333333 R: 1.0
+
+Query 17: P: 0.06666666666666667 R: 1.0
+
+Query 18: P: 0.3333333333333333 R: 1.0
+
+Query 19: P: 0.06666666666666667 R: 1.0
+
+Query 20: P: 0.13333333333333333 R: 1.0
+
+Query 21: P: 0.13333333333333333 R: 1.0
+
+Query 23: P: 0.06666666666666667 R: 1.0
+
+Query 24: P: 0.06666666666666667 R: 1.0
+
+Query 26: P: 0.13333333333333333 R: 0.6666666666666666
+
+Query 27: P: 0.3333333333333333 R: 1.0
+
+Query 28: P: 0.13333333333333333 R: 1.0
+
+Query 29: P: 0.3333333333333333 R: 1.0
+
+Query 30: P: 0.06666666666666667 R: 0.14285714285714285
+
+Query 31: P: 0.06666666666666667 R: 1.0
+
+Query 32: P: 0.13333333333333333 R: 1.0
+
+Query 33: P: 0.06666666666666667 R: 1.0
+
+Query 34: P: 0.06666666666666667 R: 1.0
+
+Query 35: P: 0.06666666666666667 R: 1.0
+
+Query 38: P: 0.5333333333333333 R: 0.8888888888888888
+
+Query 39: P: 0.4666666666666667 R: 0.7777777777777778
+
+Query 40: P: 0.26666666666666666 R: 0.6666666666666666
+
+Query 42: P: 0.13333333333333333 R: 1.0
+
+Query 43: P: 0.13333333333333333 R: 1.0
+
+Query 44: P: 0.2 R: 0.6
+
+Query 45: P: 0.6666666666666666 R: 0.5555555555555556
+
+Query 46: P: 0.26666666666666666 R: 0.6666666666666666
+
+Query 48: P: 0.4666666666666667 R: 0.875
+
+Query 49: P: 0.06666666666666667 R: 1.0
+
+Query 50: P: 0.13333333333333333 R: 0.6666666666666666
+
+Query 51: P: 0.06666666666666667 R: 0.5
+
+Query 52: P: 0.13333333333333333 R: 1.0
+
+Query 53: P: 0.06666666666666667 R: 0.5
+
+Query 54: P: 0.5333333333333333 R: 0.6666666666666666
+
+Query 56: P: 0.13333333333333333 R: 1.0
+
+Query 57: P: 0.4666666666666667 R: 0.875
+
+Query 58: P: 0.13333333333333333 R: 1.0
+
+Query 59: P: 0.13333333333333333 R: 1.0
+
+Query 60: P: 0.7333333333333333 R: 0.7333333333333333
+
+Query 61: P: 0.06666666666666667 R: 1.0
+
+Query 62: P: 0.5333333333333333 R: 0.7272727272727273
+
+Query 63: P: 0.13333333333333333 R: 1.0
+
+Query 64: P: 0.06666666666666667 R: 1.0
+
+Query 65: P: 0.13333333333333333 R: 1.0
+
+Query 66: P: 0.2 R: 1.0
+
+Query 67: P: 0.2 R: 0.375
+
+Query 68: P: 0.7333333333333333 R: 0.8461538461538461
+
+Query 69: P: 0.06666666666666667 R: 1.0
+
+Query 70: P: 0.06666666666666667 R: 0.3333333333333333
+
+Query 71: P: 0.06666666666666667 R: 1.0
+
+Query 72: P: 0.06666666666666667 R: 1.0
+
+Query 73: P: 0.13333333333333333 R: 1.0
+
+Query 75: P: 0.26666666666666666 R: 0.8
+
+Query 76: P: 0.06666666666666667 R: 1.0
+
+Query 77: P: 0.06666666666666667 R: 0.5
+
+Query 78: P: 0.06666666666666667 R: 1.0
+
+Query 79: P: 0.4 R: 0.35294117647058826
+
+Query 81: P: 0.26666666666666666 R: 0.8
+
+Query 82: P: 0.06666666666666667 R: 0.5
+
+Query at least with positive precision: 71 out of 83
+AutoEncoder
+
+
+Declaring autoencoder architecture...
+
+Done.
+
+Current matrix in use is: tfidf.
+
+Training autoencoder ...
+
+Epoch 1 of 100
+9it [00:01,  5.93it/s, loss=0.00189] 
+Epoch 2 of 100
+9it [00:01,  6.88it/s, loss=0.00189] 
+Epoch 3 of 100
+9it [00:01,  6.65it/s, loss=0.0019]  
+Epoch 4 of 100
+9it [00:01,  6.25it/s, loss=0.0019]  
+Epoch 5 of 100
+9it [00:01,  7.16it/s, loss=0.0019]  
+Epoch 6 of 100
+9it [00:01,  7.21it/s, loss=0.00189] 
+Epoch 7 of 100
+9it [00:01,  7.18it/s, loss=0.00189] 
+Epoch 8 of 100
+9it [00:01,  7.27it/s, loss=0.0019]  
+Epoch 9 of 100
+9it [00:01,  7.28it/s, loss=0.00189] 
+Epoch 10 of 100
+9it [00:01,  7.20it/s, loss=0.00189] 
+Epoch 11 of 100
+9it [00:01,  7.15it/s, loss=0.00189] 
+Epoch 12 of 100
+9it [00:01,  7.21it/s, loss=0.00189] 
+Epoch 13 of 100
+9it [00:01,  7.26it/s, loss=0.00189] 
+Epoch 14 of 100
+9it [00:01,  7.26it/s, loss=0.0019]  
+Epoch 15 of 100
+9it [00:01,  7.00it/s, loss=0.00189] 
+Epoch 16 of 100
+9it [00:01,  7.30it/s, loss=0.0019]  
+Epoch 17 of 100
+9it [00:01,  7.19it/s, loss=0.0019]  
+Epoch 18 of 100
+9it [00:01,  7.18it/s, loss=0.00189] 
+Epoch 19 of 100
+9it [00:01,  7.14it/s, loss=0.00189] 
+Epoch 20 of 100
+9it [00:01,  7.22it/s, loss=0.00189] 
+Epoch 21 of 100
+9it [00:01,  7.28it/s, loss=0.00189] 
+Epoch 22 of 100
+9it [00:01,  7.21it/s, loss=0.00189] 
+Epoch 23 of 100
+9it [00:01,  7.30it/s, loss=0.0019]  
+Epoch 24 of 100
+9it [00:01,  7.32it/s, loss=0.0019]  
+Epoch 25 of 100
+9it [00:01,  7.28it/s, loss=0.0019]  
+Epoch 26 of 100
+9it [00:01,  7.21it/s, loss=0.00189] 
+Epoch 27 of 100
+9it [00:01,  7.27it/s, loss=0.00189] 
+Epoch 28 of 100
+9it [00:01,  7.24it/s, loss=0.00189] 
+Epoch 29 of 100
+9it [00:01,  7.27it/s, loss=0.00189] 
+Epoch 30 of 100
+9it [00:01,  7.30it/s, loss=0.0019]  
+Epoch 31 of 100
+9it [00:01,  7.36it/s, loss=0.0019]  
+Epoch 32 of 100
+9it [00:01,  7.31it/s, loss=0.00189] 
+Epoch 33 of 100
+9it [00:01,  7.27it/s, loss=0.00189] 
+Epoch 34 of 100
+9it [00:01,  7.33it/s, loss=0.00189] 
+Epoch 35 of 100
+9it [00:01,  7.31it/s, loss=0.0019]  
+Epoch 36 of 100
+9it [00:01,  7.37it/s, loss=0.0019]  
+Epoch 37 of 100
+9it [00:01,  7.29it/s, loss=0.00189] 
+Epoch 38 of 100
+9it [00:01,  7.31it/s, loss=0.0019]  
+Epoch 39 of 100
+9it [00:01,  7.31it/s, loss=0.00189] 
+Epoch 40 of 100
+9it [00:01,  7.17it/s, loss=0.00189] 
+Epoch 41 of 100
+9it [00:01,  7.29it/s, loss=0.00189] 
+Epoch 42 of 100
+9it [00:01,  7.33it/s, loss=0.0019]  
+Epoch 43 of 100
+9it [00:01,  7.33it/s, loss=0.0019]  
+Epoch 44 of 100
+9it [00:01,  7.20it/s, loss=0.0019]  
+Epoch 45 of 100
+9it [00:01,  7.28it/s, loss=0.00189] 
+Epoch 46 of 100
+9it [00:01,  7.28it/s, loss=0.0019]  
+Epoch 47 of 100
+9it [00:01,  7.35it/s, loss=0.00189] 
+Epoch 48 of 100
+9it [00:01,  7.25it/s, loss=0.00189] 
+Epoch 49 of 100
+9it [00:01,  7.26it/s, loss=0.00189] 
+Epoch 50 of 100
+9it [00:01,  7.27it/s, loss=0.00189] 
+Epoch 51 of 100
+9it [00:01,  7.25it/s, loss=0.0019]  
+Epoch 52 of 100
+9it [00:01,  7.15it/s, loss=0.0019]  
+Epoch 53 of 100
+9it [00:01,  7.22it/s, loss=0.0019]  
+Epoch 54 of 100
+9it [00:01,  7.23it/s, loss=0.0019]  
+Epoch 55 of 100
+9it [00:01,  7.22it/s, loss=0.0019]  
+Epoch 56 of 100
+9it [00:01,  7.03it/s, loss=0.00189] 
+Epoch 57 of 100
+9it [00:01,  7.13it/s, loss=0.00189] 
+Epoch 58 of 100
+9it [00:01,  7.26it/s, loss=0.00189] 
+Epoch 59 of 100
+9it [00:01,  7.20it/s, loss=0.0019]  
+Epoch 60 of 100
+9it [00:01,  7.10it/s, loss=0.0019]  
+Epoch 61 of 100
+9it [00:01,  6.92it/s, loss=0.00189] 
+Epoch 62 of 100
+9it [00:01,  6.71it/s, loss=0.00189] 
+Epoch 63 of 100
+9it [00:01,  6.88it/s, loss=0.00189] 
+Epoch 64 of 100
+9it [00:01,  6.92it/s, loss=0.0019]  
+Epoch 65 of 100
+9it [00:01,  6.82it/s, loss=0.0019]  
+Epoch 66 of 100
+9it [00:01,  7.10it/s, loss=0.0019]  
+Epoch 67 of 100
+9it [00:01,  7.13it/s, loss=0.00189] 
+Epoch 68 of 100
+9it [00:01,  7.22it/s, loss=0.0019]  
+Epoch 69 of 100
+9it [00:01,  7.25it/s, loss=0.00189] 
+Epoch 70 of 100
+9it [00:01,  7.26it/s, loss=0.00188] 
+Epoch 71 of 100
+9it [00:01,  7.17it/s, loss=0.0019]  
+Epoch 72 of 100
+9it [00:01,  7.26it/s, loss=0.00189] 
+Epoch 73 of 100
+9it [00:01,  7.22it/s, loss=0.00189] 
+Epoch 74 of 100
+9it [00:01,  7.26it/s, loss=0.00189] 
+Epoch 75 of 100
+9it [00:01,  7.10it/s, loss=0.00189] 
+Epoch 76 of 100
+9it [00:01,  7.24it/s, loss=0.0019]  
+Epoch 77 of 100
+9it [00:01,  7.26it/s, loss=0.0019]  
+Epoch 78 of 100
+9it [00:01,  7.21it/s, loss=0.00189] 
+Epoch 79 of 100
+9it [00:01,  7.28it/s, loss=0.0019]  
+Epoch 80 of 100
+9it [00:01,  7.24it/s, loss=0.00189] 
+Epoch 81 of 100
+9it [00:01,  7.20it/s, loss=0.0019]  
+Epoch 82 of 100
+9it [00:01,  7.18it/s, loss=0.0019]  
+Epoch 83 of 100
+9it [00:01,  7.29it/s, loss=0.00189] 
+Epoch 84 of 100
+9it [00:01,  7.22it/s, loss=0.00189] 
+Epoch 85 of 100
+9it [00:01,  7.23it/s, loss=0.00189] 
+Epoch 86 of 100
+9it [00:01,  7.09it/s, loss=0.00189] 
+Epoch 87 of 100
+9it [00:01,  7.21it/s, loss=0.00189] 
+Epoch 88 of 100
+9it [00:01,  7.18it/s, loss=0.00189] 
+Epoch 89 of 100
+9it [00:01,  7.20it/s, loss=0.00189] 
+Epoch 90 of 100
+9it [00:01,  7.18it/s, loss=0.0019]  
+Epoch 91 of 100
+9it [00:01,  7.25it/s, loss=0.00189] 
+Epoch 92 of 100
+9it [00:01,  7.27it/s, loss=0.0019]  
+Epoch 93 of 100
+9it [00:01,  7.19it/s, loss=0.00189] 
+Epoch 94 of 100
+9it [00:01,  7.28it/s, loss=0.00189] 
+Epoch 95 of 100
+9it [00:01,  7.26it/s, loss=0.00189] 
+Epoch 96 of 100
+9it [00:01,  7.29it/s, loss=0.00189] 
+Epoch 97 of 100
+9it [00:01,  7.17it/s, loss=0.0019]  
+Epoch 98 of 100
+9it [00:01,  7.21it/s, loss=0.0019]  
+Epoch 99 of 100
+9it [00:01,  7.26it/s, loss=0.00189] 
+Epoch 100 of 100
+9it [00:01,  7.28it/s, loss=0.00189] 
+Done.
+
+Building latent space using autoencoder...
+
+Current matrix in use is: tfidf.
+
+Done.ess: 100.00%
+
+Computing single query-corpus similarity using AutoEncoder latent space...
+Embedding type: tfidf
+Latent AutoEncoder dimension: 200
+
+Done.
+
+Query 0: P: 0.06666666666666667 R: 0.14285714285714285
+
+Query 1: P: 0.13333333333333333 R: 1.0
+
+Query 2: P: 0.06666666666666667 R: 0.25
+
+Query 5: P: 0.3333333333333333 R: 0.5555555555555556
+
+Query 7: P: 0.13333333333333333 R: 1.0
+
+Query 8: P: 0.2 R: 0.375
+
+Query 9: P: 0.13333333333333333 R: 0.3333333333333333
+
+Query 11: P: 0.26666666666666666 R: 0.5714285714285714
+
+Query 12: P: 0.06666666666666667 R: 0.3333333333333333
+
+Query 14: P: 0.26666666666666666 R: 0.8
+
+Query 16: P: 0.13333333333333333 R: 1.0
+
+Query 18: P: 0.13333333333333333 R: 0.4
+
+Query 20: P: 0.06666666666666667 R: 0.5
+
+Query 23: P: 0.06666666666666667 R: 1.0
+
+Query 28: P: 0.13333333333333333 R: 1.0
+
+Query 29: P: 0.13333333333333333 R: 0.4
+
+Query 30: P: 0.13333333333333333 R: 0.2857142857142857
+
+Query 31: P: 0.06666666666666667 R: 1.0
+
+Query 32: P: 0.06666666666666667 R: 0.5
+
+Query 33: P: 0.06666666666666667 R: 1.0
+
+Query 34: P: 0.06666666666666667 R: 1.0
+
+Query 38: P: 0.3333333333333333 R: 0.5555555555555556
+
+Query 39: P: 0.2 R: 0.3333333333333333
+
+Query 40: P: 0.13333333333333333 R: 0.3333333333333333
+
+Query 42: P: 0.06666666666666667 R: 0.5
+
+Query 45: P: 0.2 R: 0.16666666666666666
+
+Query 46: P: 0.06666666666666667 R: 0.16666666666666666
+
+Query 48: P: 0.3333333333333333 R: 0.625
+
+Query 49: P: 0.06666666666666667 R: 1.0
+
+Query 50: P: 0.06666666666666667 R: 0.3333333333333333
+
+Query 51: P: 0.06666666666666667 R: 0.5
+
+Query 54: P: 0.2 R: 0.25
+
+Query 57: P: 0.2 R: 0.375
+
+Query 58: P: 0.06666666666666667 R: 0.5
+
+Query 59: P: 0.06666666666666667 R: 0.5
+
+Query 60: P: 0.3333333333333333 R: 0.3333333333333333
+
+Query 62: P: 0.2 R: 0.2727272727272727
+
+Query 63: P: 0.13333333333333333 R: 1.0
+
+Query 64: P: 0.06666666666666667 R: 1.0
+
+Query 65: P: 0.06666666666666667 R: 0.5
+
+Query 66: P: 0.2 R: 1.0
+
+Query 68: P: 0.26666666666666666 R: 0.3076923076923077
+
+Query 70: P: 0.06666666666666667 R: 0.3333333333333333
+
+Query 72: P: 0.06666666666666667 R: 1.0
+
+Query 73: P: 0.13333333333333333 R: 1.0
+
+Query 75: P: 0.13333333333333333 R: 0.4
+
+Query 77: P: 0.06666666666666667 R: 0.5
+
+Query 79: P: 0.06666666666666667 R: 0.058823529411764705
+
+Query at least with positive precision: 48 out of 83
+VariationalAutoEncoder
+
+
+Declaring variational autoencoder architecture...
+
+Done.
+
+Current matrix in use is: tfidf.
+
+Training variational autoencoder ...
+
+Epoch 1 of 100
+9it [00:01,  7.39it/s, loss=4.77]
+Epoch 2 of 100
+9it [00:01,  7.63it/s, loss=4.22]
+Epoch 3 of 100
+9it [00:01,  7.67it/s, loss=3.71]
+Epoch 4 of 100
+9it [00:01,  7.68it/s, loss=3.17]
+Epoch 5 of 100
+9it [00:01,  7.64it/s, loss=2.64]
+Epoch 6 of 100
+9it [00:01,  7.59it/s, loss=2.02]
+Epoch 7 of 100
+9it [00:01,  7.65it/s, loss=1.5] 
+Epoch 8 of 100
+9it [00:01,  7.62it/s, loss=1.12]
+Epoch 9 of 100
+9it [00:01,  7.62it/s, loss=0.739]
+Epoch 10 of 100
+9it [00:01,  7.68it/s, loss=0.516]
+Epoch 11 of 100
+9it [00:01,  7.68it/s, loss=0.34] 
+Epoch 12 of 100
+9it [00:01,  7.63it/s, loss=0.249]
+Epoch 13 of 100
+9it [00:01,  7.59it/s, loss=0.134]
+Epoch 14 of 100
+9it [00:01,  7.78it/s, loss=0.104]
+Epoch 15 of 100
+9it [00:01,  7.75it/s, loss=0.0677]
+Epoch 16 of 100
+9it [00:01,  7.51it/s, loss=0.0403]
+Epoch 17 of 100
+9it [00:01,  7.72it/s, loss=0.0382]
+Epoch 18 of 100
+9it [00:01,  7.69it/s, loss=0.0623]
+Epoch 19 of 100
+9it [00:01,  7.71it/s, loss=0.0195]
+Epoch 20 of 100
+9it [00:01,  7.56it/s, loss=0.0227]
+Epoch 21 of 100
+9it [00:01,  7.71it/s, loss=0.0178]
+Epoch 22 of 100
+9it [00:01,  7.64it/s, loss=0.0283]
+Epoch 23 of 100
+9it [00:01,  7.68it/s, loss=0.0171]
+Epoch 24 of 100
+9it [00:01,  7.65it/s, loss=0.0122]
+Epoch 25 of 100
+9it [00:01,  7.66it/s, loss=0.0116]
+Epoch 26 of 100
+9it [00:01,  7.63it/s, loss=0.0144]
+Epoch 27 of 100
+9it [00:01,  7.57it/s, loss=0.00991]
+Epoch 28 of 100
+9it [00:01,  7.64it/s, loss=0.0137]
+Epoch 29 of 100
+9it [00:01,  7.64it/s, loss=0.0095]
+Epoch 30 of 100
+9it [00:01,  7.63it/s, loss=0.0101]
+Epoch 31 of 100
+9it [00:01,  7.56it/s, loss=0.00838]
+Epoch 32 of 100
+9it [00:01,  7.54it/s, loss=0.0106]
+Epoch 33 of 100
+9it [00:01,  7.61it/s, loss=0.00827]
+Epoch 34 of 100
+9it [00:01,  7.58it/s, loss=0.00833]
+Epoch 35 of 100
+9it [00:01,  7.65it/s, loss=0.00697]
+Epoch 36 of 100
+9it [00:01,  7.64it/s, loss=0.0073]
+Epoch 37 of 100
+9it [00:01,  7.56it/s, loss=0.00897]
+Epoch 38 of 100
+9it [00:01,  7.51it/s, loss=0.00707]
+Epoch 39 of 100
+9it [00:01,  7.61it/s, loss=0.00606]
+Epoch 40 of 100
+9it [00:01,  7.63it/s, loss=0.00656]
+Epoch 41 of 100
+9it [00:01,  7.63it/s, loss=0.00613]
+Epoch 42 of 100
+9it [00:01,  7.53it/s, loss=0.00582]
+Epoch 43 of 100
+9it [00:01,  7.52it/s, loss=0.00573]
+Epoch 44 of 100
+9it [00:01,  7.56it/s, loss=0.006]  
+Epoch 45 of 100
+9it [00:01,  7.53it/s, loss=0.00571]
+Epoch 46 of 100
+9it [00:01,  7.57it/s, loss=0.00552]
+Epoch 47 of 100
+9it [00:01,  7.64it/s, loss=0.00509]
+Epoch 48 of 100
+9it [00:01,  7.61it/s, loss=0.00546]
+Epoch 49 of 100
+9it [00:01,  7.46it/s, loss=0.00499]
+Epoch 50 of 100
+9it [00:01,  7.62it/s, loss=0.00525]
+Epoch 51 of 100
+9it [00:01,  7.64it/s, loss=0.00522]
+Epoch 52 of 100
+9it [00:01,  7.59it/s, loss=0.00512]
+Epoch 53 of 100
+9it [00:01,  7.59it/s, loss=0.00531]
+Epoch 54 of 100
+9it [00:01,  7.61it/s, loss=0.00466]
+Epoch 55 of 100
+9it [00:01,  7.63it/s, loss=0.00486]
+Epoch 56 of 100
+9it [00:01,  7.54it/s, loss=0.00498]
+Epoch 57 of 100
+9it [00:01,  7.58it/s, loss=0.00451]
+Epoch 58 of 100
+9it [00:01,  7.59it/s, loss=0.00486]
+Epoch 59 of 100
+9it [00:01,  7.53it/s, loss=0.00459]
+Epoch 60 of 100
+9it [00:01,  7.59it/s, loss=0.00452]
+Epoch 61 of 100
+9it [00:01,  7.53it/s, loss=0.00447]
+Epoch 62 of 100
+9it [00:01,  7.58it/s, loss=0.00451]
+Epoch 63 of 100
+9it [00:01,  7.45it/s, loss=0.00426]
+Epoch 64 of 100
+9it [00:01,  7.57it/s, loss=0.00429]
+Epoch 65 of 100
+9it [00:01,  7.61it/s, loss=0.00419]
+Epoch 66 of 100
+9it [00:01,  7.37it/s, loss=0.00428]
+Epoch 67 of 100
+9it [00:01,  7.59it/s, loss=0.00421]
+Epoch 68 of 100
+9it [00:01,  7.56it/s, loss=0.00407]
+Epoch 69 of 100
+9it [00:01,  7.63it/s, loss=0.00391]
+Epoch 70 of 100
+9it [00:01,  7.41it/s, loss=0.004]  
+Epoch 71 of 100
+9it [00:01,  7.54it/s, loss=0.00398]
+Epoch 72 of 100
+9it [00:01,  7.55it/s, loss=0.00395]
+Epoch 73 of 100
+9it [00:01,  7.56it/s, loss=0.00388]
+Epoch 74 of 100
+9it [00:01,  7.67it/s, loss=0.00395]
+Epoch 75 of 100
+9it [00:01,  7.57it/s, loss=0.00384]
+Epoch 76 of 100
+9it [00:01,  7.65it/s, loss=0.00379]
+Epoch 77 of 100
+9it [00:01,  7.64it/s, loss=0.00382]
+Epoch 78 of 100
+9it [00:01,  7.63it/s, loss=0.00369]
+Epoch 79 of 100
+9it [00:01,  7.67it/s, loss=0.00357]
+Epoch 80 of 100
+9it [00:01,  7.55it/s, loss=0.00367]
+Epoch 81 of 100
+9it [00:01,  7.64it/s, loss=0.00349]
+Epoch 82 of 100
+9it [00:01,  7.66it/s, loss=0.00361]
+Epoch 83 of 100
+9it [00:01,  7.62it/s, loss=0.00348]
+Epoch 84 of 100
+9it [00:01,  7.68it/s, loss=0.00355]
+Epoch 85 of 100
+9it [00:01,  7.66it/s, loss=0.00347]
+Epoch 86 of 100
+9it [00:01,  7.66it/s, loss=0.00344]
+Epoch 87 of 100
+9it [00:01,  7.45it/s, loss=0.00353]
+Epoch 88 of 100
+9it [00:01,  7.27it/s, loss=0.00338]
+Epoch 89 of 100
+9it [00:01,  7.03it/s, loss=0.00345]
+Epoch 90 of 100
+9it [00:01,  6.85it/s, loss=0.00345]
+Epoch 91 of 100
+9it [00:01,  7.01it/s, loss=0.00334]
+Epoch 92 of 100
+9it [00:01,  7.45it/s, loss=0.0033] 
+Epoch 93 of 100
+9it [00:01,  7.27it/s, loss=0.00325]
+Epoch 94 of 100
+9it [00:01,  7.38it/s, loss=0.0032] 
+Epoch 95 of 100
+9it [00:01,  7.29it/s, loss=0.00318]
+Epoch 96 of 100
+9it [00:01,  7.21it/s, loss=0.0032] 
+Epoch 97 of 100
+9it [00:01,  7.35it/s, loss=0.00319]
+Epoch 98 of 100
+9it [00:01,  7.48it/s, loss=0.00323]
+Epoch 99 of 100
+9it [00:01,  6.85it/s, loss=0.00325]
+Epoch 100 of 100
+9it [00:01,  6.92it/s, loss=0.00312]
+Done.
+
+Building latent space using variational autoencoder...
+
+Current matrix in use is: tfidf.
+
+Done.ess: 100.00%
+
+Computing single query-corpus similarity using Variational Autoencoder latent space...
+Embedding type: tfidf
+Latent Variational AutoEncoder dimension: 200
+
+Done.
+
+Query 5: P: 0.06666666666666667 R: 0.1111111111111111
+
+Query 9: P: 0.06666666666666667 R: 0.16666666666666666
+
+Query 17: P: 0.06666666666666667 R: 1.0
+
+Query 45: P: 0.06666666666666667 R: 0.05555555555555555
+
+Query 48: P: 0.06666666666666667 R: 0.125
+
+Query 68: P: 0.06666666666666667 R: 0.07692307692307693
+
+Query 75: P: 0.06666666666666667 R: 0.2
+
+Query 81: P: 0.06666666666666667 R: 0.2
+
+Query at least with positive precision: 8 out of 83
+Queries information:
+ 
+SVD info:
+Query 0: P: 0.4666666666666667 R: 1.0
+Query 1: P: 0.13333333333333333 R: 1.0
+Query 2: P: 0.06666666666666667 R: 0.25
+Query 3: P: 0.06666666666666667 R: 0.2
+Query 4: P: 0.0 R: 0.0
+Query 5: P: 0.6 R: 1.0
+Query 6: P: 0.0 R: 0.0
+Query 7: P: 0.13333333333333333 R: 1.0
+Query 8: P: 0.4666666666666667 R: 0.875
+Query 9: P: 0.4 R: 1.0
+Query 10: P: 0.06666666666666667 R: 0.5
+Query 11: P: 0.4666666666666667 R: 1.0
+Query 12: P: 0.2 R: 1.0
+Query 13: P: 0.0 R: 0.0
+Query 14: P: 0.26666666666666666 R: 0.8
+Query 15: P: 0.2 R: 1.0
+Query 16: P: 0.13333333333333333 R: 1.0
+Query 17: P: 0.06666666666666667 R: 1.0
+Query 18: P: 0.3333333333333333 R: 1.0
+Query 19: P: 0.06666666666666667 R: 1.0
+Query 20: P: 0.13333333333333333 R: 1.0
+Query 21: P: 0.13333333333333333 R: 1.0
+Query 22: P: 0.0 R: 0.0
+Query 23: P: 0.06666666666666667 R: 1.0
+Query 24: P: 0.06666666666666667 R: 1.0
+Query 25: P: 0.0 R: 0.0
+Query 26: P: 0.13333333333333333 R: 0.6666666666666666
+Query 27: P: 0.3333333333333333 R: 1.0
+Query 28: P: 0.13333333333333333 R: 1.0
+Query 29: P: 0.3333333333333333 R: 1.0
+Query 30: P: 0.06666666666666667 R: 0.14285714285714285
+Query 31: P: 0.06666666666666667 R: 1.0
+Query 32: P: 0.13333333333333333 R: 1.0
+Query 33: P: 0.06666666666666667 R: 1.0
+Query 34: P: 0.06666666666666667 R: 1.0
+Query 35: P: 0.06666666666666667 R: 1.0
+Query 36: P: 0.0 R: 0.0
+Query 37: P: 0.0 R: 0.0
+Query 38: P: 0.5333333333333333 R: 0.8888888888888888
+Query 39: P: 0.4666666666666667 R: 0.7777777777777778
+Query 40: P: 0.26666666666666666 R: 0.6666666666666666
+Query 41: P: 0.0 R: 0.0
+Query 42: P: 0.13333333333333333 R: 1.0
+Query 43: P: 0.13333333333333333 R: 1.0
+Query 44: P: 0.2 R: 0.6
+Query 45: P: 0.6666666666666666 R: 0.5555555555555556
+Query 46: P: 0.26666666666666666 R: 0.6666666666666666
+Query 47: P: 0.0 R: 0.0
+Query 48: P: 0.4666666666666667 R: 0.875
+Query 49: P: 0.06666666666666667 R: 1.0
+Query 50: P: 0.13333333333333333 R: 0.6666666666666666
+Query 51: P: 0.06666666666666667 R: 0.5
+Query 52: P: 0.13333333333333333 R: 1.0
+Query 53: P: 0.06666666666666667 R: 0.5
+Query 54: P: 0.5333333333333333 R: 0.6666666666666666
+Query 55: P: 0.0 R: 0.0
+Query 56: P: 0.13333333333333333 R: 1.0
+Query 57: P: 0.4666666666666667 R: 0.875
+Query 58: P: 0.13333333333333333 R: 1.0
+Query 59: P: 0.13333333333333333 R: 1.0
+Query 60: P: 0.7333333333333333 R: 0.7333333333333333
+Query 61: P: 0.06666666666666667 R: 1.0
+Query 62: P: 0.5333333333333333 R: 0.7272727272727273
+Query 63: P: 0.13333333333333333 R: 1.0
+Query 64: P: 0.06666666666666667 R: 1.0
+Query 65: P: 0.13333333333333333 R: 1.0
+Query 66: P: 0.2 R: 1.0
+Query 67: P: 0.2 R: 0.375
+Query 68: P: 0.7333333333333333 R: 0.8461538461538461
+Query 69: P: 0.06666666666666667 R: 1.0
+Query 70: P: 0.06666666666666667 R: 0.3333333333333333
+Query 71: P: 0.06666666666666667 R: 1.0
+Query 72: P: 0.06666666666666667 R: 1.0
+Query 73: P: 0.13333333333333333 R: 1.0
+Query 74: P: 0.0 R: 0.0
+Query 75: P: 0.26666666666666666 R: 0.8
+Query 76: P: 0.06666666666666667 R: 1.0
+Query 77: P: 0.06666666666666667 R: 0.5
+Query 78: P: 0.06666666666666667 R: 1.0
+Query 79: P: 0.4 R: 0.35294117647058826
+Query 80: P: 0.0 R: 0.0
+Query 81: P: 0.26666666666666666 R: 0.8
+Query 82: P: 0.06666666666666667 R: 0.5
+AutoEncoder info:
+Query 0: P: 0.06666666666666667 R: 0.14285714285714285
+Query 1: P: 0.13333333333333333 R: 1.0
+Query 2: P: 0.06666666666666667 R: 0.25
+Query 3: P: 0.0 R: 0.0
+Query 4: P: 0.0 R: 0.0
+Query 5: P: 0.3333333333333333 R: 0.5555555555555556
+Query 6: P: 0.0 R: 0.0
+Query 7: P: 0.13333333333333333 R: 1.0
+Query 8: P: 0.2 R: 0.375
+Query 9: P: 0.13333333333333333 R: 0.3333333333333333
+Query 10: P: 0.0 R: 0.0
+Query 11: P: 0.26666666666666666 R: 0.5714285714285714
+Query 12: P: 0.06666666666666667 R: 0.3333333333333333
+Query 13: P: 0.0 R: 0.0
+Query 14: P: 0.26666666666666666 R: 0.8
+Query 15: P: 0.0 R: 0.0
+Query 16: P: 0.13333333333333333 R: 1.0
+Query 17: P: 0.0 R: 0.0
+Query 18: P: 0.13333333333333333 R: 0.4
+Query 19: P: 0.0 R: 0.0
+Query 20: P: 0.06666666666666667 R: 0.5
+Query 21: P: 0.0 R: 0.0
+Query 22: P: 0.0 R: 0.0
+Query 23: P: 0.06666666666666667 R: 1.0
+Query 24: P: 0.0 R: 0.0
+Query 25: P: 0.0 R: 0.0
+Query 26: P: 0.0 R: 0.0
+Query 27: P: 0.0 R: 0.0
+Query 28: P: 0.13333333333333333 R: 1.0
+Query 29: P: 0.13333333333333333 R: 0.4
+Query 30: P: 0.13333333333333333 R: 0.2857142857142857
+Query 31: P: 0.06666666666666667 R: 1.0
+Query 32: P: 0.06666666666666667 R: 0.5
+Query 33: P: 0.06666666666666667 R: 1.0
+Query 34: P: 0.06666666666666667 R: 1.0
+Query 35: P: 0.0 R: 0.0
+Query 36: P: 0.0 R: 0.0
+Query 37: P: 0.0 R: 0.0
+Query 38: P: 0.3333333333333333 R: 0.5555555555555556
+Query 39: P: 0.2 R: 0.3333333333333333
+Query 40: P: 0.13333333333333333 R: 0.3333333333333333
+Query 41: P: 0.0 R: 0.0
+Query 42: P: 0.06666666666666667 R: 0.5
+Query 43: P: 0.0 R: 0.0
+Query 44: P: 0.0 R: 0.0
+Query 45: P: 0.2 R: 0.16666666666666666
+Query 46: P: 0.06666666666666667 R: 0.16666666666666666
+Query 47: P: 0.0 R: 0.0
+Query 48: P: 0.3333333333333333 R: 0.625
+Query 49: P: 0.06666666666666667 R: 1.0
+Query 50: P: 0.06666666666666667 R: 0.3333333333333333
+Query 51: P: 0.06666666666666667 R: 0.5
+Query 52: P: 0.0 R: 0.0
+Query 53: P: 0.0 R: 0.0
+Query 54: P: 0.2 R: 0.25
+Query 55: P: 0.0 R: 0.0
+Query 56: P: 0.0 R: 0.0
+Query 57: P: 0.2 R: 0.375
+Query 58: P: 0.06666666666666667 R: 0.5
+Query 59: P: 0.06666666666666667 R: 0.5
+Query 60: P: 0.3333333333333333 R: 0.3333333333333333
+Query 61: P: 0.0 R: 0.0
+Query 62: P: 0.2 R: 0.2727272727272727
+Query 63: P: 0.13333333333333333 R: 1.0
+Query 64: P: 0.06666666666666667 R: 1.0
+Query 65: P: 0.06666666666666667 R: 0.5
+Query 66: P: 0.2 R: 1.0
+Query 67: P: 0.0 R: 0.0
+Query 68: P: 0.26666666666666666 R: 0.3076923076923077
+Query 69: P: 0.0 R: 0.0
+Query 70: P: 0.06666666666666667 R: 0.3333333333333333
+Query 71: P: 0.0 R: 0.0
+Query 72: P: 0.06666666666666667 R: 1.0
+Query 73: P: 0.13333333333333333 R: 1.0
+Query 74: P: 0.0 R: 0.0
+Query 75: P: 0.13333333333333333 R: 0.4
+Query 76: P: 0.0 R: 0.0
+Query 77: P: 0.06666666666666667 R: 0.5
+Query 78: P: 0.0 R: 0.0
+Query 79: P: 0.06666666666666667 R: 0.058823529411764705
+Query 80: P: 0.0 R: 0.0
+Query 81: P: 0.0 R: 0.0
+Query 82: P: 0.0 R: 0.0
+VariationalAutoEncoder info:
+Query 0: P: 0.0 R: 0.0
+Query 1: P: 0.0 R: 0.0
+Query 2: P: 0.0 R: 0.0
+Query 3: P: 0.0 R: 0.0
+Query 4: P: 0.0 R: 0.0
+Query 5: P: 0.06666666666666667 R: 0.1111111111111111
+Query 6: P: 0.0 R: 0.0
+Query 7: P: 0.0 R: 0.0
+Query 8: P: 0.0 R: 0.0
+Query 9: P: 0.06666666666666667 R: 0.16666666666666666
+Query 10: P: 0.0 R: 0.0
+Query 11: P: 0.0 R: 0.0
+Query 12: P: 0.0 R: 0.0
+Query 13: P: 0.0 R: 0.0
+Query 14: P: 0.0 R: 0.0
+Query 15: P: 0.0 R: 0.0
+Query 16: P: 0.0 R: 0.0
+Query 17: P: 0.06666666666666667 R: 1.0
+Query 18: P: 0.0 R: 0.0
+Query 19: P: 0.0 R: 0.0
+Query 20: P: 0.0 R: 0.0
+Query 21: P: 0.0 R: 0.0
+Query 22: P: 0.0 R: 0.0
+Query 23: P: 0.0 R: 0.0
+Query 24: P: 0.0 R: 0.0
+Query 25: P: 0.0 R: 0.0
+Query 26: P: 0.0 R: 0.0
+Query 27: P: 0.0 R: 0.0
+Query 28: P: 0.0 R: 0.0
+Query 29: P: 0.0 R: 0.0
+Query 30: P: 0.0 R: 0.0
+Query 31: P: 0.0 R: 0.0
+Query 32: P: 0.0 R: 0.0
+Query 33: P: 0.0 R: 0.0
+Query 34: P: 0.0 R: 0.0
+Query 35: P: 0.0 R: 0.0
+Query 36: P: 0.0 R: 0.0
+Query 37: P: 0.0 R: 0.0
+Query 38: P: 0.0 R: 0.0
+Query 39: P: 0.0 R: 0.0
+Query 40: P: 0.0 R: 0.0
+Query 41: P: 0.0 R: 0.0
+Query 42: P: 0.0 R: 0.0
+Query 43: P: 0.0 R: 0.0
+Query 44: P: 0.0 R: 0.0
+Query 45: P: 0.06666666666666667 R: 0.05555555555555555
+Query 46: P: 0.0 R: 0.0
+Query 47: P: 0.0 R: 0.0
+Query 48: P: 0.06666666666666667 R: 0.125
+Query 49: P: 0.0 R: 0.0
+Query 50: P: 0.0 R: 0.0
+Query 51: P: 0.0 R: 0.0
+Query 52: P: 0.0 R: 0.0
+Query 53: P: 0.0 R: 0.0
+Query 54: P: 0.0 R: 0.0
+Query 55: P: 0.0 R: 0.0
+Query 56: P: 0.0 R: 0.0
+Query 57: P: 0.0 R: 0.0
+Query 58: P: 0.0 R: 0.0
+Query 59: P: 0.0 R: 0.0
+Query 60: P: 0.0 R: 0.0
+Query 61: P: 0.0 R: 0.0
+Query 62: P: 0.0 R: 0.0
+Query 63: P: 0.0 R: 0.0
+Query 64: P: 0.0 R: 0.0
+Query 65: P: 0.0 R: 0.0
+Query 66: P: 0.0 R: 0.0
+Query 67: P: 0.0 R: 0.0
+Query 68: P: 0.06666666666666667 R: 0.07692307692307693
+Query 69: P: 0.0 R: 0.0
+Query 70: P: 0.0 R: 0.0
+Query 71: P: 0.0 R: 0.0
+Query 72: P: 0.0 R: 0.0
+Query 73: P: 0.0 R: 0.0
+Query 74: P: 0.0 R: 0.0
+Query 75: P: 0.06666666666666667 R: 0.2
+Query 76: P: 0.0 R: 0.0
+Query 77: P: 0.0 R: 0.0
+Query 78: P: 0.0 R: 0.0
+Query 79: P: 0.0 R: 0.0
+Query 80: P: 0.0 R: 0.0
+Query 81: P: 0.06666666666666667 R: 0.2
+Query 82: P: 0.0 R: 0.0
+
+
+Average precision and recall:
+
+SVD: P: 0.18473895582329317 R: 0.7185716519876689
+AutoEncoder: P: 0.07951807228915662 R: 0.32881952876637505
+VariationalAutoEncoder: P: 0.00642570281124498 R: 0.02331634229224591
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+General information:
+IR object with 423 documents and 83 queries.
+Current matrix-type (i.e. text-embedding type: tfidf, wc) in use is: tfidf.
+Matrix shape: (423, 14302) ---> (# docs: 423, # words: 14302)
+
+SVD information:
+SVD latent space: True
+SVD latent space dimension: 100
+
+Autoencoder information:
+Autoencoder trained: True
+Autoencoder latent space: True
+Autoencoder latent space dimension: 200
+Autoencoder architecture: AutoEncoder(
+  (img_2hid): Linear(in_features=14302, out_features=5000, bias=True)
+  (hid_2hid_en): Linear(in_features=5000, out_features=1000, bias=True)
+  (hid_2z): Linear(in_features=1000, out_features=200, bias=True)
+  (R): Linear(in_features=200, out_features=14302, bias=True)
+  (relu): ReLU()
+  (tanh): Tanh()
+  (softmax): Softmax(dim=0)
+)
+Losses: 0.0018944292096421123
+Variational Autoencoder information:
+Variational Autoencoder trained: True
+Variational Autoencoder latent space: True
+Variational Autoencoder latent space dimension: 200
+Variational Autoencoder architecture: VariationalAutoEncoder(
+  (img_2hid): Linear(in_features=14302, out_features=5000, bias=True)
+  (hid_2hid_en): Linear(in_features=5000, out_features=1000, bias=True)
+  (hid_2mu): Linear(in_features=1000, out_features=200, bias=True)
+  (hid_2sigma): Linear(in_features=1000, out_features=200, bias=True)
+  (R): Linear(in_features=200, out_features=14302, bias=True)
+  (relu): ReLU()
+  (tanh): Tanh()
+  (softmax): Softmax(dim=0)
+)
+Losses: 0.0031180272344499826
+
+Queries:
+Similiraty with .QRY queries computed in SVD latent space under tfidf text embedding: True
+Similarity with .QRY queries computed in Autoencoder latent space under tfidf text embedding: True
+ Similarity with .QRY queries computed in Variational Autoencoder latent space under tfidf text embedding: True
+To have complete information about .QRY queries, call complete_queries_info()
+
+Possible actions:
+1. Build tfidf matrix: build_tfidf_matrix()
+2. Build wc matrix: build_wc_matrix()
+3. Select matrix type: select_matrix_type('tfidf' or 'wc')
+4. Build SVD latent space: build_svd_latent_space(n_components)
+5. Build autoencoder: build_autoencoder(input_dim, h_dim_1, h_dim_2, h_dim_3, z_dim)
+6. Train autoencoder: train_autoencoder(BATCH_SIZE, NUM_EPOCHS, loss_fn, lr)
+7. Build autoencoder latent space: build_autoencoder_latent_space()
+8. Process query in SVD latent space: process_query_svd(query)
+9. Process query in Autoencoder latent space: process_query_autoencoder(query)
+10. Retrieve documents: retrieve_documents(similarity_matrix, n_docs)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Queries information:
+ 
+SVD info:
+Query 0: P: 0.4666666666666667 R: 1.0
+Query 1: P: 0.13333333333333333 R: 1.0
+Query 2: P: 0.06666666666666667 R: 0.25
+Query 3: P: 0.06666666666666667 R: 0.2
+Query 4: P: 0.0 R: 0.0
+Query 5: P: 0.6 R: 1.0
+Query 6: P: 0.0 R: 0.0
+Query 7: P: 0.13333333333333333 R: 1.0
+Query 8: P: 0.4666666666666667 R: 0.875
+Query 9: P: 0.4 R: 1.0
+Query 10: P: 0.06666666666666667 R: 0.5
+Query 11: P: 0.4666666666666667 R: 1.0
+Query 12: P: 0.2 R: 1.0
+Query 13: P: 0.0 R: 0.0
+Query 14: P: 0.26666666666666666 R: 0.8
+Query 15: P: 0.2 R: 1.0
+Query 16: P: 0.13333333333333333 R: 1.0
+Query 17: P: 0.06666666666666667 R: 1.0
+Query 18: P: 0.3333333333333333 R: 1.0
+Query 19: P: 0.06666666666666667 R: 1.0
+Query 20: P: 0.13333333333333333 R: 1.0
+Query 21: P: 0.13333333333333333 R: 1.0
+Query 22: P: 0.0 R: 0.0
+Query 23: P: 0.06666666666666667 R: 1.0
+Query 24: P: 0.06666666666666667 R: 1.0
+Query 25: P: 0.0 R: 0.0
+Query 26: P: 0.13333333333333333 R: 0.6666666666666666
+Query 27: P: 0.3333333333333333 R: 1.0
+Query 28: P: 0.13333333333333333 R: 1.0
+Query 29: P: 0.3333333333333333 R: 1.0
+Query 30: P: 0.06666666666666667 R: 0.14285714285714285
+Query 31: P: 0.06666666666666667 R: 1.0
+Query 32: P: 0.13333333333333333 R: 1.0
+Query 33: P: 0.06666666666666667 R: 1.0
+Query 34: P: 0.06666666666666667 R: 1.0
+Query 35: P: 0.06666666666666667 R: 1.0
+Query 36: P: 0.0 R: 0.0
+Query 37: P: 0.0 R: 0.0
+Query 38: P: 0.5333333333333333 R: 0.8888888888888888
+Query 39: P: 0.4666666666666667 R: 0.7777777777777778
+Query 40: P: 0.26666666666666666 R: 0.6666666666666666
+Query 41: P: 0.0 R: 0.0
+Query 42: P: 0.13333333333333333 R: 1.0
+Query 43: P: 0.13333333333333333 R: 1.0
+Query 44: P: 0.2 R: 0.6
+Query 45: P: 0.6666666666666666 R: 0.5555555555555556
+Query 46: P: 0.26666666666666666 R: 0.6666666666666666
+Query 47: P: 0.0 R: 0.0
+Query 48: P: 0.4666666666666667 R: 0.875
+Query 49: P: 0.06666666666666667 R: 1.0
+Query 50: P: 0.13333333333333333 R: 0.6666666666666666
+Query 51: P: 0.06666666666666667 R: 0.5
+Query 52: P: 0.13333333333333333 R: 1.0
+Query 53: P: 0.06666666666666667 R: 0.5
+Query 54: P: 0.5333333333333333 R: 0.6666666666666666
+Query 55: P: 0.0 R: 0.0
+Query 56: P: 0.13333333333333333 R: 1.0
+Query 57: P: 0.4666666666666667 R: 0.875
+Query 58: P: 0.13333333333333333 R: 1.0
+Query 59: P: 0.13333333333333333 R: 1.0
+Query 60: P: 0.7333333333333333 R: 0.7333333333333333
+Query 61: P: 0.06666666666666667 R: 1.0
+Query 62: P: 0.5333333333333333 R: 0.7272727272727273
+Query 63: P: 0.13333333333333333 R: 1.0
+Query 64: P: 0.06666666666666667 R: 1.0
+Query 65: P: 0.13333333333333333 R: 1.0
+Query 66: P: 0.2 R: 1.0
+Query 67: P: 0.2 R: 0.375
+Query 68: P: 0.7333333333333333 R: 0.8461538461538461
+Query 69: P: 0.06666666666666667 R: 1.0
+Query 70: P: 0.06666666666666667 R: 0.3333333333333333
+Query 71: P: 0.06666666666666667 R: 1.0
+Query 72: P: 0.06666666666666667 R: 1.0
+Query 73: P: 0.13333333333333333 R: 1.0
+Query 74: P: 0.0 R: 0.0
+Query 75: P: 0.26666666666666666 R: 0.8
+Query 76: P: 0.06666666666666667 R: 1.0
+Query 77: P: 0.06666666666666667 R: 0.5
+Query 78: P: 0.06666666666666667 R: 1.0
+Query 79: P: 0.4 R: 0.35294117647058826
+Query 80: P: 0.0 R: 0.0
+Query 81: P: 0.26666666666666666 R: 0.8
+Query 82: P: 0.06666666666666667 R: 0.5
+AutoEncoder info:
+Query 0: P: 0.06666666666666667 R: 0.14285714285714285
+Query 1: P: 0.13333333333333333 R: 1.0
+Query 2: P: 0.06666666666666667 R: 0.25
+Query 3: P: 0.0 R: 0.0
+Query 4: P: 0.0 R: 0.0
+Query 5: P: 0.3333333333333333 R: 0.5555555555555556
+Query 6: P: 0.0 R: 0.0
+Query 7: P: 0.13333333333333333 R: 1.0
+Query 8: P: 0.2 R: 0.375
+Query 9: P: 0.13333333333333333 R: 0.3333333333333333
+Query 10: P: 0.0 R: 0.0
+Query 11: P: 0.26666666666666666 R: 0.5714285714285714
+Query 12: P: 0.06666666666666667 R: 0.3333333333333333
+Query 13: P: 0.0 R: 0.0
+Query 14: P: 0.26666666666666666 R: 0.8
+Query 15: P: 0.0 R: 0.0
+Query 16: P: 0.13333333333333333 R: 1.0
+Query 17: P: 0.0 R: 0.0
+Query 18: P: 0.13333333333333333 R: 0.4
+Query 19: P: 0.0 R: 0.0
+Query 20: P: 0.06666666666666667 R: 0.5
+Query 21: P: 0.0 R: 0.0
+Query 22: P: 0.0 R: 0.0
+Query 23: P: 0.06666666666666667 R: 1.0
+Query 24: P: 0.0 R: 0.0
+Query 25: P: 0.0 R: 0.0
+Query 26: P: 0.0 R: 0.0
+Query 27: P: 0.0 R: 0.0
+Query 28: P: 0.13333333333333333 R: 1.0
+Query 29: P: 0.13333333333333333 R: 0.4
+Query 30: P: 0.13333333333333333 R: 0.2857142857142857
+Query 31: P: 0.06666666666666667 R: 1.0
+Query 32: P: 0.06666666666666667 R: 0.5
+Query 33: P: 0.06666666666666667 R: 1.0
+Query 34: P: 0.06666666666666667 R: 1.0
+Query 35: P: 0.0 R: 0.0
+Query 36: P: 0.0 R: 0.0
+Query 37: P: 0.0 R: 0.0
+Query 38: P: 0.3333333333333333 R: 0.5555555555555556
+Query 39: P: 0.2 R: 0.3333333333333333
+Query 40: P: 0.13333333333333333 R: 0.3333333333333333
+Query 41: P: 0.0 R: 0.0
+Query 42: P: 0.06666666666666667 R: 0.5
+Query 43: P: 0.0 R: 0.0
+Query 44: P: 0.0 R: 0.0
+Query 45: P: 0.2 R: 0.16666666666666666
+Query 46: P: 0.06666666666666667 R: 0.16666666666666666
+Query 47: P: 0.0 R: 0.0
+Query 48: P: 0.3333333333333333 R: 0.625
+Query 49: P: 0.06666666666666667 R: 1.0
+Query 50: P: 0.06666666666666667 R: 0.3333333333333333
+Query 51: P: 0.06666666666666667 R: 0.5
+Query 52: P: 0.0 R: 0.0
+Query 53: P: 0.0 R: 0.0
+Query 54: P: 0.2 R: 0.25
+Query 55: P: 0.0 R: 0.0
+Query 56: P: 0.0 R: 0.0
+Query 57: P: 0.2 R: 0.375
+Query 58: P: 0.06666666666666667 R: 0.5
+Query 59: P: 0.06666666666666667 R: 0.5
+Query 60: P: 0.3333333333333333 R: 0.3333333333333333
+Query 61: P: 0.0 R: 0.0
+Query 62: P: 0.2 R: 0.2727272727272727
+Query 63: P: 0.13333333333333333 R: 1.0
+Query 64: P: 0.06666666666666667 R: 1.0
+Query 65: P: 0.06666666666666667 R: 0.5
+Query 66: P: 0.2 R: 1.0
+Query 67: P: 0.0 R: 0.0
+Query 68: P: 0.26666666666666666 R: 0.3076923076923077
+Query 69: P: 0.0 R: 0.0
+Query 70: P: 0.06666666666666667 R: 0.3333333333333333
+Query 71: P: 0.0 R: 0.0
+Query 72: P: 0.06666666666666667 R: 1.0
+Query 73: P: 0.13333333333333333 R: 1.0
+Query 74: P: 0.0 R: 0.0
+Query 75: P: 0.13333333333333333 R: 0.4
+Query 76: P: 0.0 R: 0.0
+Query 77: P: 0.06666666666666667 R: 0.5
+Query 78: P: 0.0 R: 0.0
+Query 79: P: 0.06666666666666667 R: 0.058823529411764705
+Query 80: P: 0.0 R: 0.0
+Query 81: P: 0.0 R: 0.0
+Query 82: P: 0.0 R: 0.0
+VariationalAutoEncoder info:
+Query 0: P: 0.0 R: 0.0
+Query 1: P: 0.0 R: 0.0
+Query 2: P: 0.0 R: 0.0
+Query 3: P: 0.0 R: 0.0
+Query 4: P: 0.0 R: 0.0
+Query 5: P: 0.06666666666666667 R: 0.1111111111111111
+Query 6: P: 0.0 R: 0.0
+Query 7: P: 0.0 R: 0.0
+Query 8: P: 0.0 R: 0.0
+Query 9: P: 0.06666666666666667 R: 0.16666666666666666
+Query 10: P: 0.0 R: 0.0
+Query 11: P: 0.0 R: 0.0
+Query 12: P: 0.0 R: 0.0
+Query 13: P: 0.0 R: 0.0
+Query 14: P: 0.0 R: 0.0
+Query 15: P: 0.0 R: 0.0
+Query 16: P: 0.0 R: 0.0
+Query 17: P: 0.06666666666666667 R: 1.0
+Query 18: P: 0.0 R: 0.0
+Query 19: P: 0.0 R: 0.0
+Query 20: P: 0.0 R: 0.0
+Query 21: P: 0.0 R: 0.0
+Query 22: P: 0.0 R: 0.0
+Query 23: P: 0.0 R: 0.0
+Query 24: P: 0.0 R: 0.0
+Query 25: P: 0.0 R: 0.0
+Query 26: P: 0.0 R: 0.0
+Query 27: P: 0.0 R: 0.0
+Query 28: P: 0.0 R: 0.0
+Query 29: P: 0.0 R: 0.0
+Query 30: P: 0.0 R: 0.0
+Query 31: P: 0.0 R: 0.0
+Query 32: P: 0.0 R: 0.0
+Query 33: P: 0.0 R: 0.0
+Query 34: P: 0.0 R: 0.0
+Query 35: P: 0.0 R: 0.0
+Query 36: P: 0.0 R: 0.0
+Query 37: P: 0.0 R: 0.0
+Query 38: P: 0.0 R: 0.0
+Query 39: P: 0.0 R: 0.0
+Query 40: P: 0.0 R: 0.0
+Query 41: P: 0.0 R: 0.0
+Query 42: P: 0.0 R: 0.0
+Query 43: P: 0.0 R: 0.0
+Query 44: P: 0.0 R: 0.0
+Query 45: P: 0.06666666666666667 R: 0.05555555555555555
+Query 46: P: 0.0 R: 0.0
+Query 47: P: 0.0 R: 0.0
+Query 48: P: 0.06666666666666667 R: 0.125
+Query 49: P: 0.0 R: 0.0
+Query 50: P: 0.0 R: 0.0
+Query 51: P: 0.0 R: 0.0
+Query 52: P: 0.0 R: 0.0
+Query 53: P: 0.0 R: 0.0
+Query 54: P: 0.0 R: 0.0
+Query 55: P: 0.0 R: 0.0
+Query 56: P: 0.0 R: 0.0
+Query 57: P: 0.0 R: 0.0
+Query 58: P: 0.0 R: 0.0
+Query 59: P: 0.0 R: 0.0
+Query 60: P: 0.0 R: 0.0
+Query 61: P: 0.0 R: 0.0
+Query 62: P: 0.0 R: 0.0
+Query 63: P: 0.0 R: 0.0
+Query 64: P: 0.0 R: 0.0
+Query 65: P: 0.0 R: 0.0
+Query 66: P: 0.0 R: 0.0
+Query 67: P: 0.0 R: 0.0
+Query 68: P: 0.06666666666666667 R: 0.07692307692307693
+Query 69: P: 0.0 R: 0.0
+Query 70: P: 0.0 R: 0.0
+Query 71: P: 0.0 R: 0.0
+Query 72: P: 0.0 R: 0.0
+Query 73: P: 0.0 R: 0.0
+Query 74: P: 0.0 R: 0.0
+Query 75: P: 0.06666666666666667 R: 0.2
+Query 76: P: 0.0 R: 0.0
+Query 77: P: 0.0 R: 0.0
+Query 78: P: 0.0 R: 0.0
+Query 79: P: 0.0 R: 0.0
+Query 80: P: 0.0 R: 0.0
+Query 81: P: 0.06666666666666667 R: 0.2
+Query 82: P: 0.0 R: 0.0
+
+
+Average precision and recall:
+
+SVD: P: 0.18473895582329317 R: 0.7185716519876689
+AutoEncoder: P: 0.07951807228915662 R: 0.32881952876637505
+VariationalAutoEncoder: P: 0.00642570281124498 R: 0.02331634229224591
