@@ -12,11 +12,11 @@ Two deep architectures are implemented: see [here](#autoencoder) and [here](#var
 
 ## Dataset
 The datasets used can be distinguished into two different categories.
-- dataset inside [data](./data/) folder are small datasets, which comprises:
+- datasets inside [data](./data/) folder are small datasets, which comprise:
     - corpus of documents/articles (`.ALL` file)
     - a set of provided queries (`.QRY` file)
     - for each query, the corresponding relevance judgments (`.REL` file)
-- [20newsgroup](http://qwone.com/~jason/20Newsgroups/) dataset, a large dataset consisting of 20 different classes of documents, divided by topic. The dataset is already divided into training and test sets but does not contain queries and relevance judgments, hence the assessment is performed with different techniques.
+- [20newsgroup](http://qwone.com/~jason/20Newsgroups/) dataset, a large dataset consisting of 20000 articles divided into 20 different topics. The dataset is already divided into training and test sets but does not contain queries and relevance judgments, hence the assessment is performed with different techniques.
 
 ## Structure of the repository
 - [data](./data/) folder contains the following dataset:
