@@ -9,6 +9,9 @@ The following papers were used as starting point to implement the code:
 - [Unsupervised Neural Generative Semantic Hashing](https://arxiv.org/abs/1906.00671)
 - [Semantic Hashing](https://www.sciencedirect.com/science/article/pii/S0888613X08001813)
 
+Two deep architecture are implemented: see [here](#autoencoder) and [here](#variationalautoencoder) for details.
+
+
 ## Dataset
 The datasets used can be distinguished into two different categories:
 - dataset inside [data](./data/) folder are small datasets, which comprises:
@@ -40,6 +43,7 @@ The datasets used can be distinguished into two different categories:
 
 `**`: the code is working but not directly employed for efficiency reasons.
 
+
 ## Procedure for [data](./data/) analysis
 The following pipeline is followed to perform the analysis:
 1. Import the data.
@@ -69,6 +73,9 @@ The following pipeline is followed to perform the analysis:
 7. Average the precision over all the test documents
 
 
+ A semplified step-by-step version of the procedure is shown in the following figures:
+![First](./images/step1.png)
+![Second](./images/step2.png)
 
 ## Results
 In this section are reported the results obtained from the analysis of the different datasets.
