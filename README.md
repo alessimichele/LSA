@@ -42,21 +42,16 @@ The datasets used can be distinguished into two different categories:
 
 ## Procedure for [data](./data/) analysis
 The following pipeline is followed to perform the analysis:
-1. Build the embedding matrix of the corpus, with both word-count and tf-idf embeddings
+1. Import the data.
+2. Build the embedding matrix of the corpus, with both word-count and tf-idf embeddings.
 
-2. Build the SVD latent space using the corpus
-3. Process the queries using the SVD latent space
-4. Retrieve the documents using the SVD latent space
+3. For each model: SVD, AutoEncoder, VariationalAutoeEncoder:
+    - build the latent space using the embedding matrix of the corpus (if the model is a NN, train the model)
+    - project each query into the latent space and compute its similarity with all the documents in the latent space
+    - get the top k similar documents to each query
+    - compute the precision and recall using the relevances
 
-5. Train a AutoEncoder model using the embedding matrix
-6. Build the AutoEncoder latent space using the corpus
-7. Process the queries using the AutoEncoder latent space, i.e. given the .QRY queries, retrieve the documents using the AutoEncoder latent space. 
 
-8. Train a VariationalAutoEncoder model using the embedding matrix
-9. Build the VariationalAutoEncoder latent space using the corpus
-10. Process the queries using the VariationalAutoEncoder latent space, i.e. given the .QRY queries, retrieve the documents using the VariationalAutoEncoder latent space.
-
-11. Compute the precision and recall for each method
 
 ## Procedure for [20newsgroup](http://qwone.com/~jason/20Newsgroups/) analysis
 The following pipeline is followed to perform the analysis:
