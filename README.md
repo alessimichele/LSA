@@ -1,4 +1,4 @@
-# DeepSemanticHashing
+# Latent Semantic Analysis
 Repository for the project of Information Retrieval @ University of Trieste held by professor Laura Nenzi, DSSC Course, A.Y. 2023/2024.
 
 ## Outline of the project
