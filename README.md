@@ -2,23 +2,21 @@
 Repository for the project of Information Retrieval @ University of Trieste held by professor Laura Nenzi, DSSC Course, A.Y. 2023/2024.
 
 ## Outline of the project
-This project aims to implement different models for Latent Semantic Analysis (LSA) using deep neural networks and SVD techniques, and compare their performances.
-The goal of the assessment is to evaluate the quality of the learnt latent space.
-The following papers were used as starting point to implement the code:
+This project aims to implement different models for Latent Semantic Analysis (LSA) using deep neural networks and SVD techniques and compare their performances. The goal of the assessment is to evaluate the quality of the learned latent space. The following papers are taken as starting points to implement the code:
 - [Neural Variational Inference for Text Processing](https://arxiv.org/abs/1511.06038)
 - [Unsupervised Neural Generative Semantic Hashing](https://arxiv.org/abs/1906.00671)
 - [Semantic Hashing](https://www.sciencedirect.com/science/article/pii/S0888613X08001813)
 
-Two deep architecture are implemented: see [here](#autoencoder) and [here](#variationalautoencoder) for details.
+Two deep architectures are implemented: see [here](#autoencoder) and [here](#variationalautoencoder) for details.
 
 
 ## Dataset
-The datasets used can be distinguished into two different categories:
+The datasets used can be distinguished into two different categories.
 - dataset inside [data](./data/) folder are small datasets, which comprises:
     - corpus of documents/articles (`.ALL` file)
     - a set of provided queries (`.QRY` file)
-    - for each query, the corresponding relevance judgements (`.REL` file)
-- [20newsgroup](http://qwone.com/~jason/20Newsgroups/) dataset, a large dataset consisting of 20 different classes of documents, divided by topic. The dataset is already divided into training and test set, but not contains queries and relevance judgments, hence the assessment is performed with different techinques.
+    - for each query, the corresponding relevance judgments (`.REL` file)
+- [20newsgroup](http://qwone.com/~jason/20Newsgroups/) dataset, a large dataset consisting of 20 different classes of documents, divided by topic. The dataset is already divided into training and test sets but does not contain queries and relevance judgments, hence the assessment is performed with different techniques.
 
 ## Structure of the repository
 - [data](./data/) folder contains the following dataset:
@@ -32,7 +30,7 @@ The datasets used can be distinguished into two different categories:
     - [import_dataset.py*](./src/import_dataset.py) code for read and import data stored inside [data](./data/) folder.
     - [pipelines.py*](./src/pipelines.py) implementation of two pipelines for the analysis of the two different categories of dataset.
     - [utils.py*](./src/utils.py) code for the implementation of some useful functions.
-    - [_embeddings.py**](./src/_embeddings.py) code for the implementation from scratch of the inverted index, the tfidf and word-count matrices.
+    - [_embeddings.py**](./src/_embeddings.py) code for the implementation from scratch of the inverted index, the tfidf, and word-count matrices.
 
 - [out](./out/) folder contains `.txt` outputs from the analysis done on [data](./data/).
 - [data_analysis](./data_analysis.ipynb) notebook for the analysis of the [data](./data/)'s datasets.
@@ -47,13 +45,13 @@ The datasets used can be distinguished into two different categories:
 ## Procedure for [data](./data/) analysis
 The following pipeline is followed to perform the analysis:
 1. Import the data.
-2. Build the embedding matrix of the corpus, with both word-count and tf-idf embeddings.
+2. Build the embedding matrix of the corpus, with both word count and tfidf embeddings.
 
 3. For each model: SVD, AutoEncoder, VariationalAutoeEncoder:
     - build the latent space using the embedding matrix of the corpus (if the model is a NN, train the model)
     - project each query into the latent space and compute its similarity with all the documents in the latent space
     - get the top k similar documents to each query
-    - compute the precision and recall using the relevances
+    - compute the precision and recall using the relevance
 
 
 
@@ -61,19 +59,19 @@ The following pipeline is followed to perform the analysis:
 The following pipeline is followed to perform the analysis:
 1. Import the data
 2. Use a CountVectorizer to build the bag of words matrix of the training data
-3. Build the trainlaoder using the embdedded training data
-4. Train a AutoEncoder model using the trainloader
+3. Build the trainlaoder using the embedded training data
+4. Train an AutoEncoder model using the trainloader
 5. Build the latent space using the training data
 6. For each document in the test set:
     - compute its latent representation
     - compute the cosine similarity between the latent representation and the training documents
-    - retrieve the top k documents with highest similarity and the k nearest neighbors
+    - retrieve the top k documents with the highest similarity and the k nearest neighbors
     - compare the labels of the retrieved documents with the label of the test document
     - compute the precision for both methods
 7. Average the precision over all the test documents
 
 
- A semplified step-by-step version of the procedure is shown in the following figures:
+ A simplified step-by-step version of the procedure is shown in the following figures:
 ![First](./images/step1.png)
 ![Second](./images/step2.png)
 
@@ -81,8 +79,8 @@ The following pipeline is followed to perform the analysis:
 In this section are reported the results obtained from the analysis of the different datasets.
 
 ### [20newsgroup](http://qwone.com/~jason/20Newsgroups/) dataset
-The following table reports the results obtained from the analysis of the [20newsgroup](http://qwone.com/~jason/20Newsgroups/) dataset. The model used is the AutoEncoder, trained on word-count embedding matrix of the training data.
-It was tested with an increasing number of classes, and with different latent dimensions (50 and 200). Then, cosine similarity and nearest neighbours were used to retrieve the documents, and compared following step 6-7 of the procedure for [20newsgroup](http://qwone.com/~jason/20Newsgroups/) analysis.
+The following table reports the results obtained from the analysis of the [20newsgroup](http://qwone.com/~jason/20Newsgroups/) dataset. The model used is the AutoEncoder, trained on a word-count embedding matrix of the training data.
+It was tested with an increasing number of classes, and with different latent dimensions (50 and 200). Then, cosine similarity and nearest neighbors were used to retrieve the documents and compared following steps 6-7 of the procedure for [20newsgroup](http://qwone.com/~jason/20Newsgroups/) analysis.
 
 |# classess        |latent dimension         | Accuracy cosine similarity   | Accuracy nearest neighbours|
 |------------------|-------------------------|------------------------------|----------------------------|
@@ -98,9 +96,9 @@ It was tested with an increasing number of classes, and with different latent di
 
 
 ### Datasets in [data](./data/)
-The following table reports the results obtained from the analysis of the datasets in [data](./data/). The model used were SVD, the AutoEncoder and the VariationalAutoEncoder.
-Both word-count and tf-idf embeddings were tested for each model, and the results are reported in the table below.
-The percentage % represent the percentage of queries within the .QRY file that have at least one relevant document in the top 15 retrieved documents. The precision P and recall R are computed on the top 15 retrieved documents. $\ell$ is the average loss computed for AE and VAE.
+The following table reports the results obtained from the analysis of the datasets in [data](./data/). The models used were SVD, the AutoEncoder, and the VariationalAutoEncoder.
+Both word count and tfidf embeddings were tested for each model, and the results are reported in the table below.
+The percentage % represents the percentage of queries within the .QRY file that has at least one relevant document in the top 15 retrieved documents. The precision P and recall R are computed on the top 15 retrieved documents. $\ell$ is the average loss computed for AE and VAE.
 
 |           |SVD        |AE         |VAE         |
 |-----------|-----------|-----------|------------|
@@ -113,24 +111,24 @@ The percentage % represent the percentage of queries within the .QRY file that h
 
 
 ## AutoEncoder and VariationalAutoEncoder latent space
-Many architecured were recently developed to learn a latent representation of a document. In this project, I used two simple architectures: the AutoEncoder and the VariationalAutoEncoder.
+Many architectures were recently developed to learn a latent representation of a document. In this project, I used two simple architectures: the AutoEncoder and the VariationalAutoEncoder.
 
 ### AutoEncoder
 The idea behind the AutoEncoder is to learn a deterministic latent representation of the document, by encoding it into a lower dimensional space, and then decoding it back to the original space. 
 The encoding is done using two hidden linear layers, with reLU activation function. Note that the latent space is the output of the encoder.
 The decoding is done using one linear layer, then a Softmax layer: this is useful to obtain a probability distribution over the vocabulary space, based on the latent representation of the document.
 
-The training is done minimizing the loss function, which is the cross entropy between the original document and the decoded one, as depicted in the following figure.
+The training is done by minimizing the loss function, which is the cross entropy between the original document and the decoded one, as depicted in the following figure.
 ![AutoEncoder](./images/AE.png)
 
 ### VariationalAutoEncoder
 The VariationalAutoEncoder is a more complex architecture. 
 In this context, we don't learn a deterministc latent space, but a probabilistic one. 
 During the training, we learn an inference model parametrized by the encoder neural network which outputs the parameters of the unknown probability distribution $p(z|q)$. Then, we sample from this distribution to obtain the latent representation of the document.
-The prior distribution $p(z)$ is a standard Gaussian distribution, and the inference model is a Gaussian distribution with diagonal covariance matrix.
+The prior distribution $p(z)$ is a standard Gaussian distribution, and the inference model is a Gaussian distribution with a diagonal covariance matrix.
 
 The generative model (or decoder network) is then used to reconstruct the document from its latent representation.
-The training is done minimizing the loss function, which is the sum of the cross entropy between the original document and the decoded one, and the KL divergence between the inference model and the prior distribution, as depicted in the following figure.
+The training is done by minimizing the loss function, which is the sum of the cross entropy between the original document and the decoded one, and the KL divergence between the inference model and the prior distribution, as depicted in the following figure.
 ![VariationalAutoEncoder](./images/VAE.png)
 
 For further reading, see [this](https://arxiv.org/abs/1312.6114) paper.
