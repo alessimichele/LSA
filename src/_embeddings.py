@@ -1,5 +1,5 @@
 """
-Code for Information Retrieval course project @ University of Trieste, MSc in Data Science & Scientific Computing AA 2023/2024.
+Code for Information Retrieval course project @ University of Trieste, MSc in Data Science & Scientific Computing A.Y. 2023/2024.
 Author: Michele Alessi
 
 This file contains the code to build the inverted index and compute the TF-IDF matrix and WC matrix given a corpus.

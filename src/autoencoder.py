@@ -1,5 +1,5 @@
 """
-Code for Information Retrieval course project @ University of Trieste, MSc in Data Science & Scientific Computing AA 2023/2024.
+Code for Information Retrieval course project @ University of Trieste, MSc in Data Science & Scientific Computing A.Y. 2023/2024.
 Author: Michele Alessi
 
 This file contains the code to define and train the AutoEncoder model.
