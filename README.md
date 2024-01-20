@@ -78,7 +78,7 @@ In this section are reported the results obtained from the analysis of the diffe
 
 ### [20newsgroup](http://qwone.com/~jason/20Newsgroups/) dataset
 The following table reports the results obtained from the analysis of the [20newsgroup](http://qwone.com/~jason/20Newsgroups/) dataset. The model used is the AutoEncoder, trained on a word-count embedding matrix of the training data.
-It was tested with an increasing number of classes, and with different latent dimensions (50 and 200). Then, cosine similarity and nearest neighbors were used to retrieve the documents and compared following steps 6-7 of the procedure for [20newsgroup](http://qwone.com/~jason/20Newsgroups/) analysis.
+It was tested with an increasing number of classes, and with different latent dimensions (50 and 200). Then, cosine similarity and nearest neighbors were used to retrieve the documents and compared following steps 6-7 of [here](#procedure)
 
 |# classess        |latent dimension         | Accuracy cosine similarity   | Accuracy nearest neighbours|
 |------------------|-------------------------|------------------------------|----------------------------|
