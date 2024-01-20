@@ -82,20 +82,27 @@ class IR():
             build_tfidf_matrix: (None) Build the tfidf matrix.
             build_wc_matrix: (None) Build the wordcount matrix.
             select_matrix_type: (None) Select the matrix type to use.
+
+            SVD methods:
             build_svd_latent_space: (None) Build the latent space using svd decomposition.
             process_query_svd: (numpy.ndarray) Compute the similarity between the queries in .QRY file and the corpus in the SVD latent space.
+
+            Autoencoder methods:
             build_autoencoder: (None) Declare the autoencoder architecture.
             train_autoencoder: (None) Train the autoencoder.
             autoencoder_purge: (None) Delete the autoencoder.
-            load_model: (None) Load a pre-trained autoencoder.
-            save_model: (None) Save the trained autoencoder.
             build_autoencoder_latent_space: (None) Build the latent space using the trained autoencoder.
             process_query_autoencoder: (numpy.ndarray) Compute the similarity between the queries in .QRY file and the corpus in the Autoencoder latent space.
+            
+            save_model: (None) Save the trained model.
+
+            Variational Autoencoder methods:
             build_variational_autoencoder: (None) Declare the variational autoencoder architecture.
             train_variational_autoencoder: (None) Train the variational autoencoder.
             variational_autoencoder_purge: (None) Delete the variational autoencoder.
             build_variational_autoencoder_latent_space: (None) Build the latent space using the trained variational autoencoder.
             process_query_vautoencoder: (numpy.ndarray) Compute the similarity between the queries in .QRY file and the corpus in the Variational Autoencoder latent space.
+            
             complete_queries_info: (None) Print all the information about the queries in .QRY file (not working for a single query).
         """
 
