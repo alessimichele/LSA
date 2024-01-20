@@ -110,18 +110,14 @@ def TF_IDF_matrix(corpus, inv_index):
     Returns:
         np.array: TF-IDF matrix.
     """
-    # Initialize an empty matrix.
     matrix = np.zeros((len(corpus), len(inv_index)))
 
-    # Iterate over each document in the corpus.
+    # for each doc in the corpus
     for docid, article in enumerate(corpus):
-        # Iterate over each term in the document.
+        # for each term beccato in the doc
         for termid, term in enumerate(inv_index):
-            # Compute TF-IDF for the term in the document.
             matrix[docid, termid] = TF_IDF(term, docid, inv_index, corpus)
-    # Normalize the matrix.
     matrix = matrix / np.linalg.norm(matrix, axis=1, keepdims=True)
-    # Return the matrix.
     return matrix
 
 def WC_matrix(corpus, inv_index):
@@ -135,15 +131,9 @@ def WC_matrix(corpus, inv_index):
     Returns:
         np.array: Word Count matrix.
     """
-    # Initialize an empty matrix.
     matrix = np.zeros((len(corpus), len(inv_index)))
 
-    # Iterate over each document in the corpus.
     for docid, article in enumerate(corpus):
-        # Iterate over each term in the document.
         for termid, term in enumerate(inv_index):
-            # Compute TF-IDF for the term in the document.
             matrix[docid, termid] = TF(term, docid, corpus)
-
-    # Return the matrix.
     return matrix
