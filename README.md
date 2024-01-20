@@ -78,7 +78,7 @@ In this section are reported the results obtained from the analysis of the diffe
 
 ### [20newsgroup](http://qwone.com/~jason/20Newsgroups/) dataset
 The following table reports the results obtained from the analysis of the [20newsgroup](http://qwone.com/~jason/20Newsgroups/) dataset. The model used is the AutoEncoder, trained on a word-count embedding matrix of the training data.
-It was tested with an increasing number of classes, and with different latent dimensions (50 and 200). Then, cosine similarity and nearest neighbors were used to retrieve the documents and compared following steps 6-7 of [here](#procedure)
+It was tested with an increasing number of classes, and with different latent dimensions (50 and 200). Then, cosine similarity and nearest neighbors were used to retrieve the documents and compared following steps 6-7 of this [procedure](#procedure-for-20newsgroup-analysis).
 
 |# classess        |latent dimension         | Accuracy cosine similarity   | Accuracy nearest neighbours|
 |------------------|-------------------------|------------------------------|----------------------------|
@@ -94,7 +94,7 @@ It was tested with an increasing number of classes, and with different latent di
 
 
 ### Datasets in [data](./data/)
-The following table reports the results obtained from the analysis of the datasets in [data](./data/). The models used were SVD, the AutoEncoder, and the VariationalAutoEncoder.
+The following table reports the results obtained from the analysis of the datasets in [data](./data/), following [this](#procedure-for-data-analysis). The models used were SVD, the AutoEncoder, and the VariationalAutoEncoder.
 Both word count and tfidf embeddings were tested for each model, and the results are reported in the table below.
 The percentage % represents the percentage of queries within the .QRY file that has at least one relevant document in the top 15 retrieved documents. The precision P and recall R are computed on the top 15 retrieved documents. $\ell$ is the average loss computed for AE and VAE.
 
