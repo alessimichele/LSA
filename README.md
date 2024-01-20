@@ -125,7 +125,7 @@ In this context, we don't learn a deterministc latent space, but a probabilistic
 During the training, we learn an inference model parametrized by the encoder neural network which outputs the parameters of the unknown probability distribution $p(z|q)$. Then, we sample from this distribution to obtain the latent representation of the document.
 
 The generative model (or decoder network) is then used to reconstruct the document from its latent representation.
-The training is done by minimizing the loss function, which is the sum of the cross entropy between the original document and the decoded one, and the KL divergence between the inference model and the prior distribution, as depicted in the following figure.
+The training is done by minimizing the loss function, which is the sum of the cross entropy between the original document and the decoded one, and the KL divergence between the inference model and the prior distribution.
 ![VariationalAutoEncoder](./images/VAE.png)
 
 For further reading, see [this](https://arxiv.org/abs/1312.6114) paper.
