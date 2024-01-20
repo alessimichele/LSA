@@ -492,7 +492,7 @@ class IR():
         DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
         self.autoencoder.eval()
-        # DUBBIO SU TORCHMAT
+        # per ogni doc del corpus, ne faccio la proiezione nel latent space usando il trained autoencoder
         torchmat = torch.tensor(self.matrix.toarray()).float()
         latent_space = np.zeros((self.len_corpus, self.z_dim))
         for i, vec in enumerate(torchmat):
@@ -547,6 +547,7 @@ class IR():
         #print(queries_transformed.shape)
         queries_reduced = np.zeros((queries_transformed.shape[0], self.z_dim))
         self.autoencoder.eval()
+        # per ogni q, faccio la proiezione nel latent
         for i, vec in enumerate(queries_transformed):
             vec = torch.tensor(vec).float().to(DEVICE)
             _, z = self.autoencoder(vec)
