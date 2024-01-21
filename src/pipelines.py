@@ -4,7 +4,7 @@ Author: Michele Alessi
 
 This file contains the code for two pipelines to test the models:
     - pipeline_20: pipeline for the 20newsgroups dataset
-    - data_pipeline: pipeline for the dataset used in the project
+    - data_pipeline: pipeline for the dataset inside ../data/ folder.
 """
 
 
@@ -28,6 +28,7 @@ from src.autoencoder import *
 def pipeline_20(n_categories, batch_size, num_epochs, z_dim, k):
     """
     Pipeline to test the models on the 20newsgroups dataset.
+
     1. Load the dataset using n_categories categories
     2. Use a CountVectorizer to build the bag of words matrix of the training data
     3. Build the trainlaoder using the embdedded training data
