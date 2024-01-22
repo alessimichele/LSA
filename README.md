@@ -76,6 +76,8 @@ The following pipeline is followed to perform the analysis:
 ## Results
 In this section are reported the results obtained from the analysis of the different datasets.
 
+Note: the analysis was performed using datasets easily available. 20newsgroup dataset is more suitable than TIME, CRAN and MED dataset to assess the latent space, since it is divided into topics. On the other hand, the other three datasets are not topic-based, hence the model is less likely to learn a meaningful latent space. Moreover, the provided queries are in the form of free queries, meaning that it is more difficult to use the model to process them. However, even in the former case, the model is able to retrieve relevant documents, as shown [here](#datasets-in-data).
+
 ### [20newsgroup](http://qwone.com/~jason/20Newsgroups/) dataset
 The following table reports the results obtained from the analysis of the [20newsgroup](http://qwone.com/~jason/20Newsgroups/) dataset. The model used is the AutoEncoder, trained on a word-count embedding matrix of the training data.
 It was tested with an increasing number of classes, and with different latent dimensions (50 and 200). Then, cosine similarity and nearest neighbors were used to retrieve the documents and compared following steps 6-7 of this [procedure](#procedure-for-20newsgroup-analysis).
