@@ -72,6 +72,10 @@ The following pipeline is followed to perform the analysis:
     - compute the precision for both methods
 7. Average the precision over all the test documents
 
+A simplified step-by-step version of the procedure is shown in the following figures:
+![First](./images/20-1.png)
+![Second](./images/20-2.png)
+
 
 ## Results
 In this section are reported the results obtained from the analysis of the different datasets.
