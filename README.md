@@ -1,4 +1,24 @@
-# Latent Semantic Analysis
+<p align="center">
+    <h1 align="center">Latent Semantic Analysis</h1>
+</p>
+<p align="center">
+	<img src="https://img.shields.io/github/license/alessimichele/LSA?style=flat&color=0080ff" alt="license">
+	<img src="https://img.shields.io/github/last-commit/alessimichele/LSA?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
+	<img src="https://img.shields.io/github/languages/top/alessimichele/LSA?style=flat&color=0080ff" alt="repo-top-language">
+	<img src="https://img.shields.io/github/languages/count/alessimichele/LSA?style=flat&color=0080ff" alt="repo-language-count">
+<p>
+<p align="center">
+		<em>Developed with the software and tools below.</em>
+</p>
+<p align="center">
+	<img src="https://img.shields.io/badge/PyTorch-EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white" alt="PyTorch">
+    <img src="https://img.shields.io/badge/torchvision-00394D.svg?style=flat&logo=PyTorch&logoColor=white" alt="torchvision">
+	<img src="https://img.shields.io/badge/Python-3776AB.svg?style=flat&logo=Python&logoColor=white" alt="Python">
+	<img src="https://img.shields.io/badge/NumPy-013243.svg?style=flat&logo=NumPy&logoColor=white" alt="NumPy">
+	<img src="https://img.shields.io/badge/Matplotlib-013243.svg?style=flat&logo=Python&logoColor=white" alt="Matplotlib">
+</p>
+<hr>
+
 Repository for the project of Information Retrieval @ University of Trieste held by professor Laura Nenzi, DSSC Course, A.Y. 2023/2024.
 
 ## Outline of the project
