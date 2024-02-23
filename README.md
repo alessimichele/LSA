@@ -11,15 +11,25 @@
 		<em>Developed with the software and tools below.</em>
 </p>
 <p align="center">
-	<img src="https://img.shields.io/badge/PyTorch-EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white" alt="PyTorch">
-    <img src="https://img.shields.io/badge/torchvision-00394D.svg?style=flat&logo=PyTorch&logoColor=white" alt="torchvision">
-	<img src="https://img.shields.io/badge/Python-3776AB.svg?style=flat&logo=Python&logoColor=white" alt="Python">
-	<img src="https://img.shields.io/badge/NumPy-013243.svg?style=flat&logo=NumPy&logoColor=white" alt="NumPy">
-	<img src="https://img.shields.io/badge/Matplotlib-013243.svg?style=flat&logo=Python&logoColor=white" alt="Matplotlib">
+	<img src="https://img.shields.io/badge/Matplotlib-3.6.2-007ACC.svg?style=flat&logo=matplotlib&logoColor=white" alt="Matplotlib">
+	<img src="https://img.shields.io/badge/NLTK-3.8.1-4b4b4b.svg?style=flat&logo=nltk&logoColor=white" alt="NLTK">
+	<img src="https://img.shields.io/badge/NumPy-1.24.2-013243.svg?style=flat&logo=numpy&logoColor=white" alt="NumPy">
+	<img src="https://img.shields.io/badge/scikit_learn-1.2.0-F7931E.svg?style=flat&logo=scikit-learn&logoColor=white" alt="scikit-learn">
+	<img src="https://img.shields.io/badge/PyTorch-2.0.0-EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white" alt="PyTorch">
+	<img src="https://img.shields.io/badge/tqdm-4.65.0-44cc11.svg?style=flat&logo=tqdm&logoColor=white" alt="tqdm">
+
 </p>
 <hr>
 
 Repository for the project of Information Retrieval @ University of Trieste held by professor Laura Nenzi, DSSC Course, A.Y. 2023/2024.
+
+## Quick start
+Clone the repository:
+```
+git clone git@github.com:alessimichele/LSA.git
+cd LSA
+pip install -r requirements.txt
+```
 
 ## Outline of the project
 This project aims to implement different models for Latent Semantic Analysis (LSA) using deep neural networks and SVD techniques and compare their performances. The goal of the assessment is to evaluate the quality of the learned latent space. The following papers are taken as starting points to implement the code:
